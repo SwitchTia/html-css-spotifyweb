@@ -18,7 +18,7 @@ img {
   align-items: stretch;
 
   /* debug */
-  background-color: rgb(138, 30, 122);
+  /* background-color: rgb(138, 30, 122); */
 }
 
 .sidebar {
@@ -89,7 +89,7 @@ li {
 }
 
 .btn {
-  display: inline-block;
+  display: inline;
   background-color: black;
   color: white;
   font-size: small;
@@ -131,12 +131,23 @@ li {
 
     position: relative;
 }
-.main-content{
+
+
+.options-grid{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px 20px;
 }
+
+.option-card{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    
+}
+
 .albums-grid{
     display: flex;
     flex-wrap: wrap;
@@ -150,6 +161,10 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h2 {
+    padding-left: 20px;
 }
 
 /* Footer section */
