@@ -6,11 +6,11 @@ MOBILE-FIRST
 
 @media screen and (min-width: 768px) {
 
-    /* HEADER */
-    header {}
-
     /* MAIN */
     main {}
+    
+    /* MAIN header */
+    header {}
 
     /* Hero section */
 
