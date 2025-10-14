@@ -1,0 +1,59 @@
+/*************************************************
+    GENERAL SETTINGS
+**************************************************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* color: #b8c1ec;
+    background: #232946; */
+}
+
+img {
+    max-width: 100%;
+}
+
+/************************************************
+    UTILITIES
+*************************************************/
+
+/* LAYOUT */
+.container {
+    /* width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px; */
+}
+
+.row {
+    /* display: flex; */
+}
+
+.col {
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+}
+
+/* TEXT */
+/* .text-center {
+    text-align: center;
+} */
+
+/************************************************
+    SITE SECTIONS
+*************************************************/
+
+/* HEADER */
+
+
+/*  SECTION */
+
+
+/* SECTION */
+
+
