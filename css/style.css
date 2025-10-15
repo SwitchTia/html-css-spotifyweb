@@ -87,7 +87,10 @@ li {
     text-decoration: none;
 }
 
-.circle{
+.circle {
+    border-radius: 50%;
+}
+.small-circle{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -131,7 +134,7 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    line-height: 60px;
+    line-height: 30px;
 
     display: flex;
     flex-direction: column;
@@ -180,6 +183,7 @@ li {
     padding-top: 20px ;
     padding-bottom: 30px;
     text-transform: uppercase;
+    justify-content: center;
 }
 
 .nav-card{
@@ -197,7 +201,7 @@ li {
     width: calc(100% / 2 - 10px / 2);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
 }
 
