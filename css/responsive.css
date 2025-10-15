@@ -8,10 +8,16 @@
     .sidebar {
         width: 200px;
     }
-    .logo-small{
+
+    .logo-small {
         display: none;
     }
+
     .logo-big {
+        display: inline;
+    }
+
+    .playlist {
         display: inline;
     }
 }
@@ -23,7 +29,7 @@
 
 @media screen and (min-width: 700px) {
 
-    .album{
+    .album {
         width: calc(100% / 4 - (10px * 3) / 4);
     }
 }
@@ -34,7 +40,7 @@
 *************************************************/
 @media screen and (min-width: 1100px) {
 
-   .album{
+    .album {
         width: calc(100% / 6 - (10px * 5) / 6);
     }
 }
