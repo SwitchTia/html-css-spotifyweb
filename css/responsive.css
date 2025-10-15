@@ -20,6 +20,14 @@
     .playlist {
         display: inline;
     }
+
+    .display{
+        display: inline-block;
+    }
+
+    .scroll-bar-img{
+    width: 20%;
+}
 }
 
 
@@ -32,6 +40,11 @@
     .album {
         width: calc(100% / 4 - (10px * 3) / 4);
     }
+    
+    hr {
+        display: block;
+    }
+    
 }
 
 

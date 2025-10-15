@@ -64,14 +64,16 @@ body {
     text-transform: capitalize;
 }
 
+.display{
+    display: none;
+}
+
 /* Common */
 
 a{
     padding: 20px 30px;
     color: inherit;
     text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: contents;
 }
 
@@ -81,7 +83,7 @@ li {
 }
 
 .download-img{
-    width: 10%;
+    width: 15%;
 }
 
 .circle{
@@ -92,7 +94,7 @@ li {
 }
 
 .btn {
-  display: inline;
+  display: inline-block;
   background-color: black;
   color: white;
   font-size: small;
@@ -116,7 +118,7 @@ li {
 
 /*  Side bar section*/
 .logo {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .logo-big{
     display: none;
@@ -124,11 +126,15 @@ li {
 
 .sidebar{
     width: 80px;
-    padding: 20px 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     line-height: 40px;
 }
 .scroll-bar-img{
-    width: 15%;
+    width: 70%;
+    
 }
 
 .playlist{
@@ -161,6 +167,11 @@ li {
     padding-top: 20px ;
     padding-bottom: 30px;
     text-transform: uppercase;
+}
+
+.nav-card{
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 .albums-grid{
