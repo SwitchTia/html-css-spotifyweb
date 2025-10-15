@@ -82,10 +82,6 @@ li {
     text-decoration: none;
 }
 
-.download-img{
-    width: 15%;
-}
-
 .circle{
     width: 30px;
     height: 30px;
@@ -130,11 +126,23 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    line-height: 40px;
+    line-height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .scroll-bar-img{
     width: 70%;
-    
+}
+
+.download-img{
+    width: 70%;
+}
+
+.profile-img {
+    width: 50%;
 }
 
 .playlist{
