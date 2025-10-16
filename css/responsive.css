@@ -34,6 +34,10 @@
     hr {
         display: block;
     }
+
+    .download-img {
+        margin-left: 4px;
+    }
 }
 
 
