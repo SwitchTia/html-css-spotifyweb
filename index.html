@@ -158,7 +158,10 @@
 
         <div class="albums-grid">
           <div class="album">
-            <img src="img/metal_lifting.jpg" alt="Heavy metal album">
+            <div class="album-img">
+              <img src="img/metal_lifting.jpg" alt="Heavy metal album">
+              <div class="overlay"></div>
+            </div>
             <h2>Heavy metal</h2>
             <h5>Subtitle</h5>
           </div>
@@ -231,17 +234,49 @@
 
   <footer class="action-bar">
     <!-- Left side-->
-    <div class="actbar-album"> 
-      <p>lorem s </p>
+    <div class="actbar-album">
+      <div>
+        <a href="">
+          <img class="actbar-img" src="img/sinister.jpeg" alt="Sinister album">
+          <div class="inline">
+            <h4>Sinister</h4>
+            <h5 class="grey">Brano nome</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="actbar-icons-left">
+          <a href="">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-folder"></i>
+          </a>
+      </div>
     </div>
     <!-- Center-->
     <div class="actbar-player">
- <p>lorem s </p>
+      <div class="player-icons">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-regular fa-circle-play"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-rotate-right"></i>
+      </div>
     </div>
     <!-- Right side -->
-     <div class="actbar-audio">
- <p>lorem s </p>
-     </div>
+    <div class="actbar-audio">
+          <a href="">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="player-white">
+              <div class="player-bar">
+                <div class="player-bar-30">
+                </div>
+              </div>
+            </div>
+          </a>
+      </div>
+    </div>
   </footer>
 
 </body>
