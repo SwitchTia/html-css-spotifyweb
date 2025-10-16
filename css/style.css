@@ -147,6 +147,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    vertical-align: middle;
 }
 
 .scroll-bar-img{
