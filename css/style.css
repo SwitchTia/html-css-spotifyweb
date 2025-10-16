@@ -32,15 +32,14 @@ body {
     color: white;
 }
 
+/* Custom properties */
+/* :root {
+  --
+} */
+
 /************************************************
     UTILITIES & LAYOUTS
 *************************************************/
-
-.container {
-    /* width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px; */
-}
 
 .mb-10 {
     margin-bottom: 10px;
@@ -75,6 +74,7 @@ body {
 
 h1,
 h2,
+h4
 h5 {
     padding-left: 20px;
 }
@@ -115,16 +115,20 @@ li {
     margin-right: 5px;
 }
 
-span{
+span {
     margin-left: 5px;
 }
 
-.bg-grey{
+.bg-grey {
     background-color: grey;
 }
 
-.white{
+.white {
     color: white;
+}
+
+.grey{
+    color: grey;
 }
 
 /************************************************
@@ -155,7 +159,14 @@ span{
     color: grey;
     flex-shrink: 0;
     background-color: rgb(0, 0, 0);
-    overflow: auto;;
+    overflow: auto;
+    ;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .menu-img {
@@ -169,11 +180,11 @@ span{
     margin-left: 5px;
 }
 
-.opacity{
+.opacity {
     opacity: 0.7;
 }
 
-.active{
+.active {
     /* width: 40px;
     height: 20px;
     background-color: aquamarine;
@@ -192,7 +203,7 @@ span{
     height: 30px;
 }
 
-.square-plus{
+.square-plus {
     width: 30px;
     height: 30px;
     background-color: grey;
@@ -203,7 +214,7 @@ span{
     color: black;
 }
 
-.add-square-plus{
+.add-square-plus {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -278,15 +289,70 @@ footer {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.actbar-img {
+    width: 40px;
+    height: 40px;
 }
 
 .actbar-album,
 .actbar-audio {
     width: 250px;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.actbar-icons-left{
+    opacity: 0.7;
+}
+
+.inline{
+    display: inline-block;
 }
 
 .actbar-player {
     width: 40%;
-    background-color: bisque;
 }
+
+.player-white {
+    width: 40px;
+    color: grey;
+}
+
+a:hover{
+    color: grey;
+}
+
+.menu .flex {
+    position: relative;
+}
+
+
+.menu::before {
+    content: "ciao Inizio";
+}
+
+.menu::after {
+    content: "ciao Fine";
+}
+
+/* .menu .flex:hover::before {
+    content: "";
+    height: 25px;
+    width: 10px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: -25px;
+} */
