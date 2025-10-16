@@ -2,9 +2,9 @@
     GENERAL SETTINGS
 **************************************************/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img {
@@ -12,26 +12,26 @@ img {
 }
 
 .wrapper {
-  width: 100%;
-  height: calc(100vh - 100px);
-  display: flex;
-  align-items: stretch;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: stretch;
 
-  /* debug */
-  /* background-color: rgb(138, 30, 122); */
+    /* debug */
+    /* background-color: rgb(138, 30, 122); */
 }
 
 .sidebar {
-  width: 200px;
-  flex-shrink: 0;
-  background-color: rgb(0, 0, 0);
-  overflow: auto;
+    width: 200px;
+    flex-shrink: 0;
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
 }
 
 .content {
-  flex-grow: 1;
-  background-color: rgb(22, 23, 24);
-  overflow-y: scroll;
+    flex-grow: 1;
+    background-color: rgb(22, 23, 24);
+    overflow-y: scroll;
 }
 
 body {
@@ -40,10 +40,8 @@ body {
 }
 
 /************************************************
-    UTILITIES
+    UTILITIES & LAYOUTS
 *************************************************/
-
-/* LAYOUT */
 
 .container {
     /* width: 1140px;
@@ -51,20 +49,32 @@ body {
     padding: 0 20px; */
 }
 
-.flex{
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.flex {
     display: flex;
 }
 
-/* TEXT */ */
-.text-center {
+/* TEXT */
+*/ .text-center {
     text-align: center;
-} 
+}
 
-.text-cptlz{
+.text-cptlz {
     text-transform: capitalize;
 }
 
-.display{
+.display {
     display: none;
 }
 
@@ -83,7 +93,7 @@ h5 {
     padding-bottom: 10px;
 }
 
-a{
+a {
     padding: 20px 30px;
     color: inherit;
     text-decoration: none;
@@ -100,25 +110,33 @@ li {
     border-radius: 50%;
 }
 
-.small-circle{
+/* .small-circle{
     width: 30px;
     height: 30px;
     border-radius: 50%;
     color: grey;
-}
+} */
 
 .btn {
-  display: inline-block;
-  background-color: black;
-  color: white;
-  font-size: small;
-  padding: 8px 15px;
-  text-decoration: none;
-  border: solid 1px white;
-  border-radius: 30px;
-  text-transform: uppercase;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding: 8px 15px;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 30px;
+    text-transform: uppercase;
 
-  margin-right: 5px;
+    margin-right: 5px;
+}
+
+span{
+    margin-left: 5px;
+}
+
+.bg-grey{
+    background-color: grey;
 }
 
 /************************************************
@@ -132,12 +150,13 @@ li {
 .logo {
     padding-bottom: 10px;
 }
-.logo-big{
+
+.logo-big {
     display: none;
 }
 
-.sidebar{
-    width: 80px;
+.sidebar {
+    width: 70px;
     padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -148,26 +167,47 @@ li {
     flex-direction: column;
     justify-content: space-between;
     vertical-align: middle;
+
+    color: grey;
 }
 
-.scroll-bar-img{
+.menu-img {
     width: 70%;
 }
 
-.download-img{
+.download-img {
     width: 70%;
 }
 
 .profile-img {
-    width: 50%;
+    margin-left: 3px;
+    border-radius: 48%;
+    background-color: gray;
 }
 
-.playlist{
+.square-plus{
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.add-square-plus{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.playlist {
     display: none;
 }
 
 /* Main section */
-.main-header{
+.main-header {
     width: 100%;
     height: 100px;
     background-color: rgb(10, 10, 10);
@@ -182,32 +222,33 @@ li {
 }
 
 
-.main-nav{
+.main-nav {
     display: flex;
     flex-wrap: wrap;
 }
 
-.main-nav ul{  
+.main-nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    padding-top: 20px ;
+    padding-top: 20px;
     padding-bottom: 30px;
     text-transform: uppercase;
 }
 
-.nav-card{
+.nav-card {
     padding: 20px 20px;
 }
 
-.albums-grid{
+.albums-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 40px 20px;
-    
+
 }
+
 .album {
     width: calc(100% / 2 - 10px / 2);
     display: flex;
@@ -220,7 +261,7 @@ li {
 /* Footer section */
 
 footer {
-  height: 100px;
-  flex-shrink: 0;
-  background-color: rgb(38, 38, 39);
+    height: 100px;
+    flex-shrink: 0;
+    background-color: rgb(38, 38, 39);
 }

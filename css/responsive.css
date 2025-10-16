@@ -26,8 +26,8 @@
         display: flex;
     }
 
-    .scroll-bar-img {
-        width: 20%;
+    .menu-img {
+        width: 15%;
     }
 
     .download-img {
@@ -36,6 +36,7 @@
 
     .profile-img {
         width: 15%;
+
     }
 }
 
