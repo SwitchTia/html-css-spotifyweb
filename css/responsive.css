@@ -16,6 +16,7 @@
 
     .logo-big {
         display: inline-block;
+        width: 70%;
     }
 
     .playlist {
@@ -30,13 +31,8 @@
         width: 15%;
     }
 
-    .download-img {
-        width: 20%;
-    }
-
-    .profile-img {
-        width: 15%;
-
+    hr {
+        display: block;
     }
 }
 
@@ -49,10 +45,6 @@
 
     .album {
         width: calc(100% / 4 - (10px * 3) / 4);
-    }
-
-    hr {
-        display: block;
     }
 
 }
