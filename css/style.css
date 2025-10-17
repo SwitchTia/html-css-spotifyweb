@@ -243,6 +243,7 @@ span {
 .main-nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-nav ul {
@@ -338,21 +339,37 @@ a:hover{
     position: relative;
 }
 
-
-.menu::before {
+/************************************************
+   INTERACTIVE LAYOUT
+*************************************************/
+/* .menu::before {
     content: "ciao Inizio";
 }
 
 .menu::after {
     content: "ciao Fine";
-}
+} */
 
-/* .menu .flex:hover::before {
+.menu .flex:hover::before {
     content: "";
-    height: 25px;
+    height: 30px;
     width: 10px;
-    background-color: red;
+    background-color: rgb(49, 201, 64);
     position: absolute;
     top: 0;
     left: -25px;
-} */
+}
+
+.content .nav-card :hover::before {
+    content: "";
+    height: 5px;
+    width: 50px;
+    background-color: rgb(49, 201, 64);
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.content .nav-card {
+    position: relative;
+}
