@@ -49,8 +49,8 @@ body {
     margin-bottom: 20px;
 }
 
-.mb-30 {
-    margin-bottom: 30px;
+.mb-50 {
+    margin-bottom: 50px;
 }
 
 .flex {
@@ -74,8 +74,7 @@ body {
 
 h1,
 h2,
-h4
-h5 {
+h4 h5 {
     padding-left: 20px;
 }
 
@@ -127,7 +126,7 @@ span {
     color: white;
 }
 
-.grey{
+.grey {
     color: grey;
 }
 
@@ -163,7 +162,7 @@ span {
     ;
 }
 
-.menu{
+.menu {
     position: sticky;
     top: 0;
     left: 0;
@@ -303,13 +302,12 @@ footer {
     gap: 10px;
 }
 
-.actbar-audio{
+.actbar-audio {
     width: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    padding-right: 30px;
 }
 
 .player-icons {
@@ -319,25 +317,33 @@ footer {
     gap: 10px;
 }
 
-.actbar-icons-left{
+.actbar-icons-left {
     color: grey;
 }
 
-.inline{
+.inline {
     display: inline-block;
 }
 
 .actbar-player {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.play-bar{
-    border-left: 80px solid grey;
+.small-playbar {
+    width: 80px;
     height: 5px;
-    /* height: 5px;
-    width: 50px;
-    color: white; */
+    background-color: grey;
+}
+
+.big-playbar {
+    width: 250px;
+    height: 5px;
+    background-color: grey;
 }
 
 /************************************************
@@ -351,7 +357,7 @@ footer {
     content: "ciao Fine";
 } */
 
-a:hover{
+a:hover {
     color: rgb(255, 255, 255);
 }
 
@@ -385,21 +391,37 @@ a:hover{
     position: relative;
 }
 
-.square-plus :hover{
+.square-plus :hover {
     color: white;
 }
 
-.inline :hover{
+.inline :hover {
     color: white;
     text-decoration: underline;
 }
 
-.actbar-icons-left :hover{
+.actbar-icons-left :hover {
     color: white;
 }
 
+/* non funziona */
 
-.play-bar-30 :hover{
+.album .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.album :hover .back{
+    z-index: 0;
+}
+
+
+/* non funziona */
+.small-playbar :hover ::before {
+    color: white;
+    content: "ciao";
     border: 30px solid white;
     height: 5px;
 
@@ -407,13 +429,13 @@ a:hover{
     top: 0;
     left: 0;
 }
-.actbar-audio{
+
+.actbar-audio .small-playbar  {
     position: relative;
 }
 
-.btn .a :hover{
+.btn .a :hover {
     width: 250px;
     height: 50px;
-    
-}
 
+}
