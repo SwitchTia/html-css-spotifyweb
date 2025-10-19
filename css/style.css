@@ -25,6 +25,7 @@ img {
     flex-grow: 1;
     background-color: rgb(22, 23, 24);
     overflow-y: scroll;
+    position: relative ;
 }
 
 body {
@@ -430,10 +431,8 @@ a:hover {
 
 .front  {
     position: absolute;
-    top: 105px;
-    left: 105px;
-    width: 100%;
-    height: 100%;
+    top: 45%;
+    left: 45%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -445,6 +444,9 @@ a:hover {
 
 .album :hover .front {
   opacity: 1;
+}
+.play-btn {
+    transform: scale(2.5);
 }
 
 /* non funziona */
@@ -463,9 +465,6 @@ a:hover {
     position: relative;
 } */
 
-/* .btn :hover {
-    height: 110%;
-    width: 110%; */
     /* transform: scale(1.5); */
 
     /* width: 250px;
