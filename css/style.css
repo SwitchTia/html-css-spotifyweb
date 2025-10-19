@@ -100,20 +100,6 @@ li {
     border-radius: 50%;
 }
 
-.btn {
-    width: 220px;
-    height: 40px;
-    display: inline-block;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    border: solid 1px white;
-    border-radius: 30px;
-    align-content: center;
-    padding-left: 22px;
-}
-
 span {
     margin-left: 5px;
 }
@@ -231,6 +217,19 @@ span {
     align-items: center;
 }
 
+.btn {
+    width: 220px;
+    height: 40px;
+    display: inline-block;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border: solid 1px white;
+    border-radius: 30px;
+    align-content: center;
+    padding-left: 22px;
+}
 
 .main-nav {
     display: flex;
@@ -269,7 +268,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    align-items: center;
+    align-items: center
 }
 
 
@@ -317,6 +316,11 @@ footer {
     gap: 10px;
 }
 
+#play {
+    width: 30px;
+    height: 40px;
+}
+
 .actbar-icons-left {
     color: grey;
 }
@@ -338,12 +342,15 @@ footer {
     width: 80px;
     height: 5px;
     background-color: grey;
+    border-radius: 20px;
 }
 
 .big-playbar {
-    width: 250px;
+    max-width: 200px;
     height: 5px;
     background-color: grey;
+    border-radius: 20px;
+    width: 100%;
 }
 
 /************************************************
@@ -404,22 +411,44 @@ a:hover {
     color: white;
 }
 
-/* non funziona */
-
-.album .back {
+/* .overlay :hover {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-}
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.2;
+} */
 
-.album :hover .back{
-    z-index: 0;
+.album-img {
+     position: relative;
+     display: inline-block;
 }
-
 
 /* non funziona */
-.small-playbar :hover ::before {
+
+.front  {
+    position: absolute;
+    top: 105px;
+    left: 105px;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.album :hover .back {
+    opacity: 0.4;
+}
+
+.album :hover .front {
+  opacity: 1;
+}
+
+/* non funziona */
+/* .small-playbar :hover ::before {
     color: white;
     content: "ciao";
     border: 30px solid white;
@@ -428,14 +457,22 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
-.actbar-audio .small-playbar  {
+/* .actbar-audio .small-playbar {
     position: relative;
-}
+} */
 
-.btn .a :hover {
-    width: 250px;
-    height: 50px;
+/* .btn :hover {
+    height: 110%;
+    width: 110%; */
+    /* transform: scale(1.5); */
 
-}
+    /* width: 250px;
+    height: 70px; */
+
+/* 
+#play:hover {
+    scale: calc(1.25);
+    translate: 0;
+} */
