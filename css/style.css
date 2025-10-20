@@ -213,6 +213,7 @@ span {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 9999;
 
     display: flex;
     justify-content: end;
@@ -425,6 +426,8 @@ a:hover {
 
 .album-img {
      position: relative;
+     top: 0;
+     left: 0;
      display: inline-block;
 }
 
